@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+
+{{/*  <p>{{ .Site.Params.homeText | markdownify }}</p>   <-- affiche le text homeText dans le fichier de conf  */}}
+
+
+<img src="/images/banniere.webp" class="img-fluid border rounded-5" alt="">
+
+<div class="container-fluid mb-5">  
+    {{.Content}}
+</div>
+
+
+
+
+{{ end }}
+

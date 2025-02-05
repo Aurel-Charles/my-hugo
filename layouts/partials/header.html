@@ -1,0 +1,16 @@
+
+
+<header class="bg-dark border-bottom ">
+    <div class="container text-center p-3">
+        <h1 class="navbar-brand py-3 border border-warning">
+            <a href="{{ .Site.Home.RelPermalink }}" class="text-decoration-none text-warning ">
+                {{ .Site.Title }}
+            </a>
+        </h1>
+    </div>
+    <div class="border-top">
+        <nav >
+            {{ partial "nav.html" . }} 
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<div class="text-center">
+    <h2>{{ .Title }}</h2>
+</div>
+
+<div class="my-5">
+    {{.Content}}
+</div>
+    
+    <div>
+        {{ partial "formulaire.html" . }}
+    </div>
+
+{{ end }}
+

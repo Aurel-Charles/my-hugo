@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+    <div class="text-center">
+        <h2>{{ .Title }}</h2>
+    </div>
+
+    <div class="my-5">
+        {{.Content}}
+    </div>
+
+    <div class="container-fluid mb-5 bg-dark my-2 p-5 border rounded-3">
+        {{ partial "list_card.html" . }}
+    </div>
+
+
+{{ end }}

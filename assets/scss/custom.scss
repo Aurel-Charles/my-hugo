@@ -1,0 +1,75 @@
+// Import Bootstrap core files
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+
+// Override Bootstrap variables (before importing Bootstrap)
+$primary: #ff5733;  // Example custom color
+$font-size-base: 1.1rem;
+
+// Import Bootstrap components
+@import "bootstrap/bootstrap";
+
+// Add your custom styles
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+
+/* Apply DotGothic16 to the website title */
+.navbar-brand, .site-title {
+    font-family: 'Silkscreen', sans-serif;
+    // font-size: 5rem; /* Adjust size if needed */
+    font-weight: 400;
+  }
+
+/* Apply nav button colors */
+  .navbar-nav .nav-link.btn:hover {
+    color: white !important;
+    background-color: var(--bs-secondary) !important; /* Keep button color */
+    border-color: var(--bs-primary) !important; /* Keep border */
+  }
+
+/* Define a custom font size variable for the site title */
+:root {
+    --title-font-size: 2rem; /* Default for small screens */
+  }
+  
+  @media (min-width: 768px) { /* Tablets */
+    :root {
+      --title-font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 992px) { /* Desktops */
+    :root {
+      --title-font-size: 4rem;
+    }
+  }
+  
+  @media (min-width: 1200px) { /* Large screens */
+    :root {
+      --title-font-size: 5rem;
+    }
+  }
+  
+  /* Apply the variable to the title */
+  .navbar-brand {
+    font-size: var(--title-font-size);
+  }
+  
+  /* Apply the padding to the main section to be shown under the header */
+body {
+padding-top: 260px; /* Adjust this based on your header height */
+}
+
+@media (max-width: 992px) {
+body {
+    padding-top: 200px; /* Increase padding for desktop if needed */
+}
+}
+
+@media (max-width: 768px) {
+body {
+    padding-top: 170px; /* Increase padding for mobile if needed */
+}
+}

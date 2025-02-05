@@ -1,0 +1,41 @@
+{{ $images := .Page.Resources.ByType "image" }}
+
+{{ if gt (len $images) 0 }}
+<div class="d-inline-flex flex-wrap justify-content-center bg-dark my-2 py-5 border rounded-3">
+    {{ range $index, $img := $images }}
+    <!-- Thumbnail Image (Click to Open Modal) -->
+    <div data-bs-toggle="modal" data-bs-target="#image_modal_{{ $index }}">
+        <img src="{{ $img.RelPermalink }}" class="img-fluid img-thumbnail m-2" alt="Image {{ $index }}" 
+             style="max-height: 20rem; cursor: pointer;">
+    </div>
+
+    <!-- Modal (Size Adjusts to Image) -->
+    <div class="modal fade" id="image_modal_{{ $index }}" tabindex="-1" aria-labelledby="modal_label_{{ $index }}" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border border-dark border-1">
+                <div class="modal-header text-center bg-dark">
+                    <h1 class="modal-title fs-5 w-100 text-center text-warning" id="modal_label_{{ $index }}">Image numéro {{ $index }}</h1>
+                    <div class="btn-close-white">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+
+                <!-- Image adjusts modal size -->
+                <div class="modal-body text-center">
+                    <img src="{{ $img.RelPermalink }}" class="img-fluid rounded w-auto h-auto" alt="Image {{ $index }}">
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center bg-dark">
+                    <a href="{{ $img.RelPermalink }}" download class="btn btn-warning">
+                        <i class="bi bi-download"></i> Télécharger
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>
+
+{{ else }}
+<p class="text-danger text-center">Aucune image trouvée.</p>
+{{ end }}

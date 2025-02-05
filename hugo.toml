@@ -1,0 +1,28 @@
+baseURL = 'https://example.org/'
+languageCode = 'fr-FR'
+title = 'Pixelbooth'
+
+
+
+
+[menu]
+    [[menu.main]]
+        name = "Acceuil"
+        url = "/"
+        weight = 1
+    [[menu.main]]
+        name = "Infos"
+        url = "/infos/"
+        weight = 2
+    [[menu.main]]
+        name = "Réservation"
+        url = "/reservation/"
+        weight = 3
+    [[menu.main]]
+        name = "Galleries"
+        url = "/galleries/"
+        weight = 4    
+
+
+# [params]
+#   homeText = "Here is the homepage Hometext"
