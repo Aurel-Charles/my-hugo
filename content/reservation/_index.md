@@ -6,5 +6,5 @@ type = 'reservation'  # select the reservation.html
 
 +++
 Voici un formulaire de reservation 
-N'hésitez pas a prendre contacte avec nous!!
+N'hésitez pas a prendre contacte avec nous!! color theme
 
