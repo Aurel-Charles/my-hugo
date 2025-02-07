@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/thank-you/</loc>
+    <lastmod>2025-02-07T15:56:08+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/thank_you/</loc>
+    <lastmod>2025-02-07T15:56:08+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/galleries/third_post/</loc>
     <lastmod>2025-01-30T20:01:26+01:00</lastmod>
   </url><url>
