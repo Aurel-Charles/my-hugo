@@ -13,7 +13,7 @@
       <link>http://localhost:1313/thank-you/</link>
       <pubDate>Fri, 07 Feb 2025 15:56:08 +0100</pubDate>
       <guid>http://localhost:1313/thank-you/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;p&gt;Votre formulaire a été soumis avec succès&lt;/p&gt;&#xA;&lt;a href=&#34;http://localhost:1313/&#34; class=&#34;btn btn-secondary&#34;&gt;Retour à l&#39;accueil&lt;/a&gt;</description>
     </item>
     <item>
       <title>Third_post</title>

@@ -8,6 +8,6 @@ type = 'page'
 +++
 
 
-<h2>Merci ! 🎉</h2>
-<p>Votre formulaire a été soumis avec succès.</p>
-<a href="/" class="btn">Retour à l'accueil</a>
+Votre formulaire a été soumis avec succès
+
+{{< retour_accueil >}}
