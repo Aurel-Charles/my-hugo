@@ -1,0 +1,25 @@
+backend:
+  name: github  # Or gitlab, bitbucket, etc.  Choose your Git provider
+  repo: https://github.com/Aurel-Charles/my-hugo # Your repository on GitHub (or other provider)
+  branch: V1 # Or master, or your content branch
+
+media_folder: static/images/upload # Where uploaded images will be stored (relative to your site root)
+public_folder: / # The public path to your media folder
+
+collections:
+  - name: posts # A collection of content (e.g., blog posts)
+    label: Posts
+    folder: content/posts # Where your content files are located
+    create: true # Allow creating new posts
+    slug: "{{slug}}" # How URLs are generated for new posts
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime }
+      - { name: body, label: Body, widget: markdown }
+  - name: pages
+    label: Pages
+    folder: content
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: body, label: Body, widget: markdown }
