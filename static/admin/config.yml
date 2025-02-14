@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
-  branch: V1 # Branch to update (optional; defaults to master)
+  branch: main # Branch to update (optional; defaults to master)
+site_url: https://pixelbooth.netlify.app/
+display_url: https://pixelbooth.netlify.app/
 media_folder: static/img
 public_folder: /img
 collections:
@@ -9,8 +11,9 @@ collections:
     folder: 'content/galleries'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    preview_path: galleries/{{slug}}
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
       - { label: 'Title', name: 'title', widget: 'string' }
