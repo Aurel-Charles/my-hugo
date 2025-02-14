@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  branch: V1 # Branch to update (optional; defaults to master)
 site_url: https://pixelbooth.netlify.app/
 display_url: https://pixelbooth.netlify.app/
 media_folder: static/img
