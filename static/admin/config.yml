@@ -5,7 +5,7 @@ site_url: https://pixelbooth.netlify.app/
 display_url: https://pixelbooth.netlify.app/
 media_folder: static/img
 public_folder: /img
-show_preview_links: true
+format: toml
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -15,6 +15,7 @@ collections:
     preview_path: galleries/{{slug}}
     editor:
       preview: true
+      show_preview_links: true
     fields:
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
       - { label: 'Title', name: 'title', widget: 'string' }
