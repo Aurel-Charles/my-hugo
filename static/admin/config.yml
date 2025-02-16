@@ -5,6 +5,7 @@ site_url: https://pixelbooth.netlify.app/
 display_url: https://pixelbooth.netlify.app/
 media_folder: static/img
 public_folder: /img
+show_preview_links: true
 collections:
   - name: 'blog'
     label: 'Blog'
